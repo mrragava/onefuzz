@@ -145,7 +145,7 @@ pub async fn spawn(config: SupervisorConfig) -> Result<(), Error> {
     );
 
     let inputs = SyncedDir {
-        local_path: runtime_dir.path().join("default/queue"),
+        local_path: runtime_dir.path().join("inputs"),
         remote_path: config.inputs.remote_path.clone(),
     };
 
